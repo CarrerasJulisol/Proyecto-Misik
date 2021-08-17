@@ -1,0 +1,23 @@
+.section-combo {
+    margin: 80px 80px 100px 80px;
+
+    h1 {
+        text-align: center;
+    }
+
+    .grid-container-combo {
+        display: grid;
+        grid-template-columns: 500px 200px;
+        grid-template-rows: 200px;
+        justify-content: center;
+        padding: 50px;
+
+        @media only screen and (max-width:991px) {
+            width: 10%;
+        }
+
+        
+    }
+
+
+}

@@ -1,0 +1,46 @@
+.section-quienes {
+    padding: 80px;
+
+    .descripciones {
+        background-color: #2f4f4f76;
+        @extend %texto-descripciones;
+        border-radius: 20px;
+        padding: 40px 0px 0px 80px;
+
+        h1 {
+            @extend %titulos;
+
+            @media only screen and (max-width:991px) {
+                padding: 5px;
+            }
+        }
+
+        p {
+            padding: 0px 600px 0px 0px;
+
+            @media only screen and (max-width:991px) {
+                padding:  5px;
+            }
+        }
+
+        .imagen-costado {
+            margin: 80px 0px 0px 600px;
+            width: 40%;
+            position: relative;
+            bottom: 150px;
+
+            @media only screen and (max-width:991px) {
+                margin: 30px;
+                bottom: 0px;
+            }
+        }
+
+        @media only screen and (max-width:991px) {
+            padding:  10px 5px;
+        }
+    }
+
+    @media only screen and (max-width:991px) {
+        padding:  80px 20px;
+    }
+}

@@ -1,0 +1,48 @@
+header {
+    .tamaño-logo {
+        width: 20%;
+    }
+
+    .tamaño-icono-menu {
+        width: 20px;
+    }
+
+    .menu-desplegable {
+        background-color: whitesmoke;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: absolute;
+        top: 48px;
+        right: 0px;
+        width: 50%;
+
+        .menu-estilo, .sub-menu {
+            color: #3DC4A3;
+            list-style: none;
+
+            .sin-text-deco {
+                text-decoration: none;
+                color: #3DC4A3;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+
+        @media only screen and (max-width:514px) {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:991px) {
+        .menu-cel {
+            flex-wrap: inherit;
+
+            .tamaño-logo {
+                width: 100px;
+            }
+        }
+    }
+
+}

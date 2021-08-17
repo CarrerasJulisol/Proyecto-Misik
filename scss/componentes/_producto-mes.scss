@@ -1,0 +1,54 @@
+.section-mes {
+    margin: 80px;
+
+
+    .descripciones {
+        background-color: #2f4f4f76;
+        color: #3b413e;
+        font-family: cursive;
+        text-align: left;
+        border-radius: 20px;
+        padding: 40px 0px 0px 80px;
+
+        h1 {
+            @extend %titulos;
+
+            @media only screen and (max-width:991px) {
+                padding: 5px;
+            }
+        }
+
+        p {
+            padding: 0px 30px;
+
+            @media only screen and (max-width:991px) {
+                padding:  5px;
+            }
+        }
+
+        .viñetas {
+            @extend %viñetas;
+        }
+
+        .imagen-costado {
+            margin: 80px 20px 0px 500px;
+            width: 40%;
+            position: relative;
+            bottom: 150px;
+
+            @media only screen and (max-width:991px) {
+                margin: 30px;
+                bottom: 0px;
+            }
+        }
+
+        @media only screen and (max-width:991px) {
+            padding:  10px 5px;
+        }
+    }
+
+    @media only screen and (max-width:991px) {
+        padding:  80px 20px;
+    }
+    
+}

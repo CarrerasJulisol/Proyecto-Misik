@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- link de iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- link a mi css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- link a fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;300&display=swap"
+    rel="stylesheet">
+    <title>Tu combo</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg menu-cel">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="imagen/logo-misik.png" class="tamaño-logo"></a>
+            </div>
+            <p>
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="imagen/menu.png" alt="menú" class="tamaño-icono-menu">
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body menu-desplegable">
+                    <ul class="menu-estilo">
+                        <li><a href="index.html" class="sin-text-deco">Inicio</a></li>
+                        <li class="expandir">Productos<img src="img/flecha.png" alt="" class="img"></li>
+                            <ul class="sub-menu">
+                                <li><a href="productos.html" class="sin-text-deco">Todos</a></li>
+                                <li><a href="producto-del-mes.html" class="sin-text-deco">Producto especial del mes</a></li>
+                                <li><a href="tu-combo.html" class="sin-text-deco">Combos</a></li>
+                            </ul>
+                        <li><a href="quienes-somos.html" class="sin-text-deco">¿Quiénes somos?</a></li>
+                        <li>Redes</li>
+                        <li>Ayuda</li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="section-combo">
+        <h1>¡Crea tu propio combo!</h1>
+        <section class="grid-container-combo">
+            
+            <div>
+                <p class="descripciones-combo">
+                  ¡Ahora podes personalizar la caja con lo que más te guste!
+                  Mirá la lista de <a href="productos.html"><em>productos</em></a>
+                  y elegí los que queres en tu combo.
+                 </p>
+            </div>
+            <div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="imagen/caramalos.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagen/galletitas.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagen/snacks.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>    
+        </section>
+    </section>
+
+    
+
+    <!-- footer -->
+    <footer>
+        <nav class="sticky-bottom navbar-light bg-light">
+            <div class="posicion-footer">
+                <div class="container-fluid">
+                    <a class="footer-estilo elementos-estilo" href="#"><img src="imagen/logo-misik.png" class="logo-footer">© 2021 Misik, todos los derechos reservados.</a>
+                </div>
+                <div>
+                   <ul class="footer-estilo posicion-lista">
+                       <li>
+                           <a href="https://www.instagram.com" class="elementos-estilo redes"><i class="bi bi-instagram"></i></a>
+                        </li>
+                       <li>
+                           <a href="https://www.youtube.com" class="elementos-estilo redes"><i class="bi bi-youtube"></i></a>
+                        </li>
+                       <li>
+                           <a href="https://www.facebook.com" class="elementos-estilo redes"><i class="bi bi-facebook"></i></a>
+                        </li>
+                   </ul> 
+                </div>
+          </nav>
+    </footer>
+
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

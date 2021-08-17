@@ -1,0 +1,44 @@
+.section-productos {
+    h1 {
+        @extend %titulos;
+    }
+
+    .grid-productos {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px;
+        align-items: start;
+        justify-content: center;
+
+        .productos-tamaño-solo {
+            width:  200px;
+            border: 1px solid #bfaf90;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            margin: 10px auto;
+        }
+
+        .productos-descripcion {
+            @extend %texto-productos;
+            margin: 10px;
+
+        }
+    }
+
+    .volver {
+        @extend %botones;
+        margin: 20px 500px;
+
+        @media only screen and (min-width:992px) and (max-width:1246) {
+            margin:  50px 100px;
+        }
+
+        @media only screen and (max-width:991px) {
+            margin: 10px;
+        }
+
+        
+    }
+
+}

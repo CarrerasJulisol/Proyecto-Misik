@@ -1,0 +1,15 @@
+@import 'fuentes';
+
+/* titulos */
+section h1 a, section h2, section h1 {
+    font-family: fuente;
+    color:#478668;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 20px;
+
+}
+
+section h2, section h1 {
+    font-size: 35px;
+}

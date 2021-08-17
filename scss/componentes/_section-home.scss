@@ -1,0 +1,234 @@
+section {
+    margin-bottom: 30px;
+}
+
+/*seccion uno de la pagina principal*/
+.section-one {
+    margin-top: 80px;
+    background-image: url(../imagen/caja-especial.png);
+    background-size: cover;
+    height: 700px;
+
+    div {
+        margin-top: 64px;
+        padding-top: 50px;
+
+        h1 {
+            @extend %titulos;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        .arriba-imagen {
+            background-color: #2f4f4f76;
+            margin: 30px 800px 0px 50px;
+            border-radius: 20px;
+            padding: 20px;
+            color: aliceblue;
+            z-index: 1;
+
+            @media only screen and (min-width:992px) and (max-width:1329) {
+                margin:  0px 20px;
+            }
+            
+            @media only screen and (max-width:991px) {
+                margin: 0px 20px;
+            }
+
+        }
+
+
+        .boton {
+            @extend %botones;
+            margin: 20px 580px;
+
+            @media only screen and (min-width:992px) and (max-width:1329) {
+                margin:  20px;
+            }
+
+
+            @media only screen and (max-width:991px) {
+                margin: 10px;
+            }
+
+        }
+
+        .cambiar-posicion {
+            position: relative;
+            top: 300px;
+
+            @media only screen and (min-width:992px) and (max-width:1329) {
+                margin:  20px;
+            }
+
+            @media only screen and (max-width:991px) {
+                margin: 10px;
+                top: 250px;
+            }
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        background-position-x: 480px;
+        background-attachment: fixed;
+    }
+}
+
+/*seccion dos de la pagina principal*/
+.section-two {
+    div {
+        margin: 50px 0px;
+
+    
+        h2 {
+            @extend %titulos;
+        }
+
+        .orden-productos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+                .productos-tamaño {
+                    width:  200px;
+                    border: 1px solid gray;
+                    background-color: white;
+                    transition: all 2s;
+                    border-radius: 10px;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: all 2s;
+                    }
+
+                    @media only screen and (min-width:992px) and (max-width:1304px) {
+                        display: flex;
+                        align-items: center;
+                        margin: 10px auto;
+                    }
+
+                    @media only screen and (max-width:991px) {
+                        display: flex;
+                        align-items: center;
+                        margin: 10px auto;
+                    }
+                }
+
+                @media only screen and (min-width:992px) and (max-width:1304px) {
+                    flex-wrap: wrap;
+                }
+
+                @media only screen and (max-width:991px) {
+                    flex-wrap: wrap;
+                } 
+        }
+
+        .boton {
+            @extend %botones;
+            margin: 20px 580px;
+
+            @media only screen and (min-width:992px) and (max-width:1329) {
+                margin:  20px;
+            }
+
+
+            @media only screen and (max-width:991px) {
+                margin: 10px;
+            }
+
+        }
+
+        .cambiar-posicion {
+            position: relative;
+            top: 300px;
+
+            @media only screen and (min-width:992px) and (max-width:1329) {
+                margin:  20px;
+            }
+
+            @media only screen and (max-width:991px) {
+                margin: 10px;
+                top: 250px;
+            }
+        }
+    }
+}
+
+/*seccion 3 de la pagina principal */
+.section-three {
+    background-image: url(../imagen/img-combo-fondo.png);
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+
+    div {
+        h2 {
+            @extend %titulos;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        .arriba-imagen {
+            background-color: #2f4f4f76;
+            margin: 30px 800px 0px 50px;
+            border-radius: 20px;
+            padding: 20px;
+            color: aliceblue;
+            z-index: 1;
+
+            @media only screen and (max-width:991px) {
+                font-family: cursive;
+                margin: 0px 20px ;
+            }
+        }
+
+        .boton {
+            @extend %botones;
+            margin: 20px 580px;
+
+            @media only screen and (min-width:992px) and (max-width:1329) {
+                margin:  20px;
+            }
+
+
+            @media only screen and (max-width:991px) {
+                margin: 10px;
+            }
+
+        }
+
+        .cambiar-posicion {
+            position: relative;
+            top: 300px;
+
+            @media only screen and (min-width:992px) and (max-width:1329) {
+                margin:  20px;
+            }
+
+            @media only screen and (max-width:991px) {
+                margin: 10px;
+                top: 250px;
+            }
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        background-attachment: fixed;
+    }
+    
+}
+
+/*seccion uno de pagina de productos*/
+
+
+.section-productos {
+    margin: 80px;
+
+    h1 {
+        @media only screen and (max-width:991px) {
+            text-align: center;
+            padding: 20px 0px;
+        }
+    }
+}

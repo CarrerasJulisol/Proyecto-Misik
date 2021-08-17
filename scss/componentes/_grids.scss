@@ -1,0 +1,51 @@
+/* grid en pagina de productos */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 180px 180px 180px 180px 180px;
+    grid-template-rows: 180px 30px;
+    grid-gap: 10px 30px;
+    align-items: stretch;
+    justify-content: space-evenly;
+
+    .grid-item-img {
+        border: 1px solid #bfaf90;
+        background-color: white;
+        display: flex;
+        align-items: center;
+
+        .tamaño-img {
+            width: 180px;
+
+            &:hover {
+                filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+            }
+        }
+    }
+
+    .grid-item-texto {
+        border: 1px solid #bfaf90;
+        background-color: transparent;
+        color: rgb(56, 56, 56);
+        font-family: cursive;
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    .grid-item-texto:hover {
+        background-color:white;
+        color: black;
+    }
+
+    @media only screen and (max-width:991px) {
+        grid-template-columns: none;
+        grid-template-rows: 180px;
+        
+            .grid-item-texto {
+                visibility: hidden;
+            }
+    }
+
+}

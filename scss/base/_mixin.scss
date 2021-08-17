@@ -1,0 +1,7 @@
+@mixin cambiar-tamaño($ancho-columnas) {
+    grid-template-columns: ($ancho-columnas);
+}
+
+.grid-container-combo {
+    @include cambiar-tamaño(150px 100px);
+}

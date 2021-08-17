@@ -1,0 +1,48 @@
+//botones
+%botones {
+    background-color: #319B80;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    text-decoration: none;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+        background-color: #549C74;
+        color: black;
+        border: white 3px inset;
+    }
+
+}
+
+//estilo de los textos
+%texto-descripciones {
+    color: #3b413e;
+    font-family: cursive;
+    text-align: left;
+}
+
+%texto-productos {
+    color: #0D0F0E;
+    font-family: cursive;
+}
+
+//titulos de la pagina 
+%titulos {
+    font-family: fuente;
+    color: #478668;
+    letter-spacing: 2px;
+    padding: 20px 0px 20px 50px;
+    margin-left: 10px;
+    font-size:  35px;
+}
+
+//viñetas
+%viñetas {
+    list-style: square inside url(/imagen/caramelito.png);
+    display: flex;
+    flex-direction: column;
+}
