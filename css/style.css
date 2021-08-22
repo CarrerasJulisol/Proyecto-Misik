@@ -111,7 +111,7 @@ section {
 /*seccion uno de la pagina principal*/
 .section-one {
   margin-top: 80px;
-  background-image: url(../imagen/caja-especial.png);
+  background-image: url(../imagen/caja-especial.svg);
   background-size: cover;
   height: 700px;
 }
@@ -252,7 +252,7 @@ section {
 
 /*seccion 3 de la pagina principal */
 .section-three {
-  background-image: url(../imagen/img-combo-fondo.png);
+  background-image: url(../imagen/img-combo-fondo.svg);
   background-size: cover;
   background-position: center center;
   height: 700px;
