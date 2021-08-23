@@ -4,7 +4,7 @@ section {
 
 /*seccion uno de la pagina principal*/
 .section-one {
-    margin-top: 80px;
+    margin-top: 56px;
     background-image: url(../imagen/caja-especial.svg);
     background-size: cover;
     height: 700px;
@@ -161,6 +161,7 @@ section {
     background-size: cover;
     background-position: center center;
     height: 700px;
+    margin-bottom: 0px;
 
     div {
         h2 {
