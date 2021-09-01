@@ -447,7 +447,7 @@ section h2, section h1 {
   color: #0D0F0E;
 }
 
-.ayuda h1, .section-productos h1, .section-quienes .descripciones h1, .section-mes .descripciones h1, .section-two div h2 {
+.contacto h1, .section-productos h1, .section-quienes .descripciones h1, .section-mes .descripciones h1, .section-two div h2 {
   font-family: "Montserrat", sans-serif;
   color: #478668;
   letter-spacing: 2px;
@@ -624,23 +624,23 @@ section h2, section h1 {
   grid-template-columns: 150px 100px;
 }
 
-.ayuda {
+.contacto {
   margin: 56px 80px;
   height: 500px;
 }
-.ayuda h1 {
+.contacto h1 {
   text-align: center;
 }
-.ayuda .redes {
+.contacto .redes {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.ayuda .redes .tamaño-img {
+.contacto .redes .tamaño-img {
   width: 100px;
 }
-.ayuda .redes .texto {
+.contacto .redes .texto {
   text-align: left;
   width: 200px;
 }
