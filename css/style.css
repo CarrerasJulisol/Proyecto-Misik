@@ -131,12 +131,17 @@ section {
   color: aliceblue;
   z-index: 1;
 }
-@media only screen and (min-width: 992px) and (max-width: 1329) {
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
   .section-one div .arriba-imagen {
     margin: 0px 20px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .section-one div .arriba-imagen {
+    margin: 0px 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
   .section-one div .arriba-imagen {
     margin: 0px 20px;
   }
@@ -144,12 +149,17 @@ section {
 .section-one div .boton {
   margin: 20px 580px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1329) {
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
   .section-one div .boton {
     margin: 20px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .section-one div .boton {
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
   .section-one div .boton {
     margin: 10px;
   }
@@ -158,12 +168,17 @@ section {
   position: relative;
   top: 300px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1329) {
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
+  .section-one div .cambiar-posicion {
+    margin: 10px 300px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .section-one div .cambiar-posicion {
     margin: 20px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 480px) {
   .section-one div .cambiar-posicion {
     margin: 10px;
     top: 250px;
@@ -197,26 +212,26 @@ section {
   transform: scale(1.2);
   transition: all 2s;
 }
-@media only screen and (min-width: 992px) and (max-width: 1304px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .section-two div .orden-productos .productos-tamaño {
     display: flex;
     align-items: center;
     margin: 10px auto;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 480px) {
   .section-two div .orden-productos .productos-tamaño {
     display: flex;
     align-items: center;
     margin: 10px auto;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1304px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .section-two div .orden-productos {
     flex-wrap: wrap;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 480px) {
   .section-two div .orden-productos {
     flex-wrap: wrap;
   }
@@ -224,12 +239,17 @@ section {
 .section-two div .boton {
   margin: 20px 580px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1329) {
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
+  .section-two div .boton {
+    margin: 20px 300px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .section-two div .boton {
     margin: 20px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 480px) {
   .section-two div .boton {
     margin: 10px;
   }
@@ -238,12 +258,17 @@ section {
   position: relative;
   top: 300px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1329) {
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
+  .section-two div .cambiar-posicion {
+    margin: 150px 300px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .section-two div .cambiar-posicion {
     margin: 20px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 480px) {
   .section-two div .cambiar-posicion {
     margin: 10px;
     top: 250px;
@@ -270,21 +295,35 @@ section {
   color: aliceblue;
   z-index: 1;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
   .section-three div .arriba-imagen {
-    font-family: cursive;
+    margin: 0px 20px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .section-three div .arriba-imagen {
+    margin: 0px 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section-three div .arriba-imagen {
     margin: 0px 20px;
   }
 }
 .section-three div .boton {
   margin: 20px 580px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1329) {
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
   .section-three div .boton {
     margin: 20px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .section-three div .boton {
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
   .section-three div .boton {
     margin: 10px;
   }
@@ -293,12 +332,17 @@ section {
   position: relative;
   top: 300px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1329) {
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
+  .section-three div .cambiar-posicion {
+    margin: 150px 300px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .section-three div .cambiar-posicion {
     margin: 20px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 480px) {
   .section-three div .cambiar-posicion {
     margin: 10px;
     top: 250px;
@@ -314,7 +358,7 @@ section {
 .section-productos {
   margin: 80px;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 480px) {
   .section-productos h1 {
     text-align: center;
     padding: 20px 0px;
@@ -427,15 +471,17 @@ section h2, section h1 {
 }
 
 .section-mes {
-  margin: 80px;
+  margin: 0px 80px;
 }
 .section-mes .descripciones {
   background-color: #2f4f4f76;
   color: #3b413e;
-  font-family: cursive;
   text-align: left;
-  border-radius: 20px;
-  padding: 40px 0px 0px 80px;
+  padding: 80px 0px 0px 80px;
+}
+.section-mes .descripciones h1 {
+  margin-left: 0px;
+  padding: 0px 0px 20px 30px;
 }
 @media only screen and (max-width: 991px) {
   .section-mes .descripciones h1 {
@@ -462,24 +508,33 @@ section h2, section h1 {
     bottom: 0px;
   }
 }
-@media only screen and (max-width: 991px) {
-  .section-mes .descripciones {
-    padding: 10px 5px;
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
+  .section-mes {
+    margin: 65px 0px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .section-mes {
-    padding: 80px 20px;
+    margin: 65px 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section-mes {
+    margin: 65px 0px;
   }
 }
 
 .section-quienes {
-  padding: 80px;
+  padding: 58px;
+  margin: 0px 22px;
 }
 .section-quienes .descripciones {
   background-color: #2f4f4f76;
-  border-radius: 20px;
   padding: 40px 0px 0px 80px;
+}
+.section-quienes .descripciones h1 {
+  margin-left: 0px;
+  padding: 0px 0px 20px 30px;
 }
 @media only screen and (max-width: 991px) {
   .section-quienes .descripciones h1 {
@@ -511,9 +566,22 @@ section h2, section h1 {
     padding: 10px 5px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1290px) {
   .section-quienes {
-    padding: 80px 20px;
+    padding: 65x 0px;
+    margin: 0px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .section-quienes {
+    padding: 65px 0px;
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section-quienes {
+    padding: 65px 0px;
+    margin: 0px;
   }
 }
 

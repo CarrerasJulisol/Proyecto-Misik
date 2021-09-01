@@ -27,11 +27,15 @@ section {
             color: aliceblue;
             z-index: 1;
 
-            @media only screen and (min-width:992px) and (max-width:1329) {
+            @media only screen and (min-width:768px) and (max-width:1290px) {
+                margin:  0px 20px;
+            }
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
                 margin:  0px 20px;
             }
             
-            @media only screen and (max-width:991px) {
+            @media only screen and (max-width:480px) {
                 margin: 0px 20px;
             }
 
@@ -42,12 +46,15 @@ section {
             @extend %botones;
             margin: 20px 580px;
 
-            @media only screen and (min-width:992px) and (max-width:1329) {
-                margin:  20px;
+            @media only screen and (min-width:768px) and (max-width:1290px) {
+                margin: 20px;
             }
 
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                margin: 20px;
+            }
 
-            @media only screen and (max-width:991px) {
+            @media only screen and (max-width:480px) {
                 margin: 10px;
             }
 
@@ -57,11 +64,15 @@ section {
             position: relative;
             top: 300px;
 
-            @media only screen and (min-width:992px) and (max-width:1329) {
-                margin:  20px;
+            @media only screen and (min-width:768px) and (max-width:1290px) {
+                margin: 10px 300px;
             }
 
-            @media only screen and (max-width:991px) {
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                margin: 20px;
+            }
+
+            @media only screen and (max-width:480px) {
                 margin: 10px;
                 top: 250px;
             }
@@ -102,24 +113,24 @@ section {
                         transition: all 2s;
                     }
 
-                    @media only screen and (min-width:992px) and (max-width:1304px) {
+                    @media only screen and (min-width:481px) and (max-width:767px) {
                         display: flex;
                         align-items: center;
                         margin: 10px auto;
                     }
 
-                    @media only screen and (max-width:991px) {
+                    @media only screen and (max-width:480px) {
                         display: flex;
                         align-items: center;
                         margin: 10px auto;
                     }
                 }
 
-                @media only screen and (min-width:992px) and (max-width:1304px) {
+                @media only screen and (min-width:481px) and (max-width:767px) {
                     flex-wrap: wrap;
                 }
 
-                @media only screen and (max-width:991px) {
+                @media only screen and (max-width:480px) {
                     flex-wrap: wrap;
                 } 
         }
@@ -128,12 +139,15 @@ section {
             @extend %botones;
             margin: 20px 580px;
 
-            @media only screen and (min-width:992px) and (max-width:1329) {
+            @media only screen and (min-width:768px) and (max-width:1290px)  {
+                margin: 20px 300px;
+            }
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
                 margin:  20px;
             }
 
-
-            @media only screen and (max-width:991px) {
+            @media only screen and (max-width:480px) {
                 margin: 10px;
             }
 
@@ -143,11 +157,15 @@ section {
             position: relative;
             top: 300px;
 
-            @media only screen and (min-width:992px) and (max-width:1329) {
+            @media only screen and (min-width:768px) and (max-width:1290px) {
+                margin: 150px 300px;
+            }
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
                 margin:  20px;
             }
 
-            @media only screen and (max-width:991px) {
+            @media only screen and (max-width:480px) {
                 margin: 10px;
                 top: 250px;
             }
@@ -178,9 +196,16 @@ section {
             color: aliceblue;
             z-index: 1;
 
-            @media only screen and (max-width:991px) {
-                font-family: cursive;
-                margin: 0px 20px ;
+            @media only screen and (min-width:768px) and (max-width:1290px)  {
+                margin: 0px 20px;
+            }
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                margin: 0px 20px;
+            }
+            
+            @media only screen and (max-width:480px) {
+                margin: 0px 20px;
             }
         }
 
@@ -188,12 +213,15 @@ section {
             @extend %botones;
             margin: 20px 580px;
 
-            @media only screen and (min-width:992px) and (max-width:1329) {
+            @media only screen and (min-width:768px) and (max-width:1290px)  {
+                margin: 20px;
+            }
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
                 margin:  20px;
             }
 
-
-            @media only screen and (max-width:991px) {
+            @media only screen and (max-width:480px) {
                 margin: 10px;
             }
 
@@ -203,11 +231,15 @@ section {
             position: relative;
             top: 300px;
 
-            @media only screen and (min-width:992px) and (max-width:1329) {
+            @media only screen and (min-width:768px) and (max-width:1290px) {
+                margin: 150px 300px;
+            }
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
                 margin:  20px;
             }
 
-            @media only screen and (max-width:991px) {
+            @media only screen and (max-width:480px) {
                 margin: 10px;
                 top: 250px;
             }
@@ -227,7 +259,7 @@ section {
     margin: 80px;
 
     h1 {
-        @media only screen and (max-width:991px) {
+        @media only screen and (max-width:480px) {
             text-align: center;
             padding: 20px 0px;
         }

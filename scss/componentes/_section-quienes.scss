@@ -1,14 +1,16 @@
 .section-quienes {
-    padding: 80px;
+    padding: 58px;
+    margin: 0px 22px;
 
     .descripciones {
         background-color: #2f4f4f76;
         @extend %texto-descripciones;
-        border-radius: 20px;
         padding: 40px 0px 0px 80px;
 
         h1 {
             @extend %titulos;
+            margin-left: 0px;
+            padding: 0px 0px 20px 30px;
 
             @media only screen and (max-width:991px) {
                 padding: 5px;
@@ -40,7 +42,18 @@
         }
     }
 
-    @media only screen and (max-width:991px) {
-        padding:  80px 20px;
+    @media only screen and (min-width:768px) and (max-width:1290px) {
+        padding:  65x 0px;
+        margin: 0px;
+    }
+
+    @media only screen and (min-width:481px) and (max-width:767px) {
+        padding: 65px 0px;
+        margin: 0px;
+    }
+    
+    @media only screen and (max-width:480px) {
+        padding: 65px 0px;
+        margin: 0px;
     }
 }
