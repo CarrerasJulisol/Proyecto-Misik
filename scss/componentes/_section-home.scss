@@ -13,12 +13,6 @@ section {
         margin-top: 64px;
         padding-top: 50px;
 
-        h1 {
-            @extend %titulos;
-            font-style: italic;
-            font-weight: bolder;
-        }
-
         .arriba-imagen {
             background-color: #2f4f4f76;
             margin: 30px 800px 0px 50px;
@@ -182,10 +176,9 @@ section {
     margin-bottom: 0px;
 
     div {
+        
         h2 {
-            @extend %titulos;
-            font-style: italic;
-            font-weight: bolder;
+            padding-top: 30px;
         }
 
         .arriba-imagen {

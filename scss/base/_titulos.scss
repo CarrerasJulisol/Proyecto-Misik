@@ -1,12 +1,17 @@
-@import 'fuentes';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
 
 /* titulos */
-section h1 a, section h2, section h1 {
-    font-family: fuente;
-    color:#478668;
-    text-decoration: none;
-    letter-spacing: 2px;
-    padding: 20px;
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;
+    padding-bottom: 30px;
+	letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: whitesmoke;
+    text-shadow: 
+        3px 3px #319B80,
+        5px 5px darkslategrey;
 
 }
 
