@@ -14,7 +14,7 @@ header {
         position: absolute;
         top: 48px;
         right: 0px;
-        width: 50%;
+        width: 30%;
 
         .menu-estilo, .sub-menu {
             color: #3DC4A3;
@@ -27,6 +27,7 @@ header {
                 &:hover {
                     color: black;
                 }
+
             }
         }
 

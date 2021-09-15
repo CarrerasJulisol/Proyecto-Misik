@@ -39,6 +39,39 @@
     <title>Ayuda</title>
 </head>
 <body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg menu-cel">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="imagen/logo-misik.ico" class="tamaño-logo"></a>
+             </div>
+            <p>
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="imagen/menu.ico" alt="menú" class="tamaño-icono-menu">
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body menu-desplegable">
+                    <ul class="menu-estilo">
+                        <li><a href="index.html" class="sin-text-deco">Inicio</a></li>
+                        <li><a data-bs-toggle="collapse" href="#collapseProductos" aria-expanded="false" aria-controls="collapseExample" class="collapsed sin-text-deco">
+                            Productos<i class="bi bi-caret-down-fill img"></i>
+                            </a>
+                            <div id="collapseProductos" class="collapse">
+                                <ul class="sub-menu">
+                                    <li><a href="producto-del-mes.html" class="sin-text-deco">Teuki</a></li>
+                                    <li><a href="productos.html" class="sin-text-deco">Todos</a></li>
+                                    <li><a href="tu-combo.html" class="sin-text-deco">Combos</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="nosotros.html" class="sin-text-deco">Nosotros</a></li>
+                        <li><a href="ayuda.html" class="sin-text-deco">Ayuda</a></li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
     
 
 

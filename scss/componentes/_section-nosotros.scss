@@ -1,10 +1,12 @@
+//quienes somos
 .section-quienes {
-    padding: 108px;
+    padding: 108px 100px 0px 100px;
     margin: 0px 22px;
 
     .descripciones {
         @extend %texto-descripciones;
         padding: 40px 0px 0px 80px;
+        height: 400px;
 
         h1 {
             @extend %titulos;
@@ -17,7 +19,7 @@
         }
 
         p {
-            padding: 0px 600px 0px 0px;
+            padding: 0px 500px 0px 0px;
 
             @media only screen and (max-width:991px) {
                 padding:  5px;
@@ -28,7 +30,7 @@
             margin: 80px 0px 0px 600px;
             width: 40%;
             position: relative;
-            bottom: 150px;
+            bottom: 230px;
 
             @media only screen and (max-width:991px) {
                 margin: 30px;
@@ -54,5 +56,65 @@
     @media only screen and (max-width:480px) {
         padding: 65px 0px;
         margin: 0px;
+    }
+}
+
+//redes
+.contacto {
+    margin: 0px 80px;
+
+    h1 {
+        @extend %titulos;
+        text-align: center;
+        margin: 0px;
+    }
+
+   
+
+    .lista-estilo {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        .tarjetas {
+            background: whitesmoke;
+            box-shadow: 0px 2px 5px 0px darkgrey;
+
+            &:hover {
+                transform: translateY(10px);
+            }
+        }
+
+        .redes {
+        margin: 30px;
+        height: 100px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 30px;
+
+            .tam-img {
+                width: 50px;
+            }
+        
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .formulario {
+        margin: 10px 200px;
+        height: 400px;
+        width: 700px;
+
+        .posicion-boton {
+            position: absolute;
+            left: 600px;
+        }
     }
 }

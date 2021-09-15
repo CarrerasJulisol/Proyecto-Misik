@@ -37,7 +37,7 @@ header .menu-desplegable {
   position: absolute;
   top: 48px;
   right: 0px;
-  width: 50%;
+  width: 30%;
 }
 header .menu-desplegable .menu-estilo, header .menu-desplegable .sub-menu {
   color: #3DC4A3;
@@ -447,7 +447,7 @@ section h2, section h1 {
   color: #0D0F0E;
 }
 
-.contacto h1, .section-productos h1, .section-quienes .descripciones h1, .section-mes .descripciones h1, .section-two div h2 {
+.section-productos h1, .contacto h1, .section-quienes .descripciones h1, .section-mes .descripciones h1, .section-two div h2 {
   font-family: "Montserrat", sans-serif;
   color: #478668;
   letter-spacing: 2px;
@@ -515,11 +515,12 @@ section h2, section h1 {
 }
 
 .section-quienes {
-  padding: 108px;
+  padding: 108px 100px 0px 100px;
   margin: 0px 22px;
 }
 .section-quienes .descripciones {
   padding: 40px 0px 0px 80px;
+  height: 400px;
 }
 .section-quienes .descripciones h1 {
   margin-left: 0px;
@@ -531,7 +532,7 @@ section h2, section h1 {
   }
 }
 .section-quienes .descripciones p {
-  padding: 0px 600px 0px 0px;
+  padding: 0px 500px 0px 0px;
 }
 @media only screen and (max-width: 991px) {
   .section-quienes .descripciones p {
@@ -542,7 +543,7 @@ section h2, section h1 {
   margin: 80px 0px 0px 600px;
   width: 40%;
   position: relative;
-  bottom: 150px;
+  bottom: 230px;
 }
 @media only screen and (max-width: 991px) {
   .section-quienes .descripciones .imagen-costado {
@@ -572,6 +573,52 @@ section h2, section h1 {
     padding: 65px 0px;
     margin: 0px;
   }
+}
+
+.contacto {
+  margin: 0px 80px;
+}
+.contacto h1 {
+  text-align: center;
+  margin: 0px;
+}
+.contacto .lista-estilo {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.contacto .lista-estilo .tarjetas {
+  background: whitesmoke;
+  box-shadow: 0px 2px 5px 0px darkgrey;
+}
+.contacto .lista-estilo .tarjetas:hover {
+  transform: translateY(10px);
+}
+.contacto .lista-estilo .redes {
+  margin: 30px;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+.contacto .lista-estilo .redes .tam-img {
+  width: 50px;
+}
+.contacto p {
+  text-align: center;
+  margin-top: 30px;
+}
+.contacto .formulario {
+  margin: 10px 200px;
+  height: 400px;
+  width: 700px;
+}
+.contacto .formulario .posicion-boton {
+  position: absolute;
+  left: 600px;
 }
 
 .section-combo {
@@ -622,27 +669,6 @@ section h2, section h1 {
 
 .grid-container-combo {
   grid-template-columns: 150px 100px;
-}
-
-.contacto {
-  margin: 56px 80px;
-  height: 500px;
-}
-.contacto h1 {
-  text-align: center;
-}
-.contacto .redes {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.contacto .redes .tam-img {
-  width: 100px;
-}
-.contacto .redes .texto {
-  text-align: left;
-  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
