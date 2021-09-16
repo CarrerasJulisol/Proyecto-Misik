@@ -16,7 +16,7 @@
 
     <!-- link a fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;300&display=swap" rel="stylesheet">
-    
+
     <!-- meta tags: DESCRIPCION -->
     <meta name="description" content="Nuestra caja especial 'Teuki' con dulces, snacks y bebidas que cambian cada mes.">
 
@@ -69,10 +69,37 @@
           </nav>
     </header>
 
-    <section class="section-mes">
 
+
+    <!-- que es la teuki y como funciona-->
+    <section class="descripcion-teuki">
+        <h1>Teuki</h1>
+            <p class="texto-chico">la caja del mes</p>
+        <div>
+            <h2>¿Qué es la Teuki?</h2>
+            <p>
+                Es nuestro producto especial del mes. Consiste en una caja
+                con dulces, snakcs y bebidas preseleccionadas cuidadosamente
+                por nosotros para que puedas disfrutar de cada mes de una
+                variedad distinta y que lo puedas compartir con quien
+                más quieras y como más te guste.
+            </p>
+        </div>
+        <div>
+            <h2>¿Cómo funciona?</h2>
+            <p>
+                Cada mes nosotros elegimos y combinamos meticulosamente las
+                golosinas y bebidas que irán dentro de la caja del siguiente mes.
+                Así, todo lo que tenes que hacer es esperar la Teuki llegue
+                a tu domicilio y disfrutar y probar las golosinas que más te gustan.
+            </p>
+        </div>
+    </section>
+
+    <!-- seccion que explica lo que contiene a caja de este mes-->
+    <section class="section-mes">
         <div class="descripciones">
-            <h1>Caja del mes</h1>
+            <h2>Contenido</h2>
             <p>En esta edicion la caja del mes contiene:</p>
             <ul class="viñetas">
                 <li>2 gaseosas</li>
@@ -81,9 +108,36 @@
                 <li>2 gelatinas</li>
                 <li>3 paquetes de snacks</li>
             </ul>
+            <button>Comprar</button><!-- al hacer click se tiene que abrir el carrito -->
             <img src="imagen/caja-mes.svg" alt="caja del mes" class="imagen-costado">
         </div>
     </section>
+
+    <button type="button" class="btn btn-dark carrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        <img src="imagen/shopping-cart.svg" alt="carrito de compra">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+01 <span class="visually-hidden">Cosas en el carrito</span></span>
+    </button>
+
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header titulo-carro">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Carrito</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small cuadro">
+        <div class="tabla">
+            <div>
+                Teuki de Septiembre
+            </div>
+            <div>
+                <img src="imagen/caja-mes.svg" alt="Teuki" class="img-carro">
+            </div>
+        </div>
+        <div class="precio">Precio: $400</div>
+        <div class="total">
+            Total: $400
+        </div>
+    </div>
+    </div>
 
     <!-- footer -->
     <footer>

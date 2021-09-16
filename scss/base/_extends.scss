@@ -38,9 +38,38 @@
     font-size:  35px;
 }
 
+/* titulo con*/
+%titulo {
+    font-family: 'Montserrat', sans-serif;
+	letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: whitesmoke;
+    text-shadow: 
+        3px 3px #319B80,
+        5px 5px darkslategrey;
+
+}
+
+/*subtitulos*/
+
+%subtitulo {
+    font-family: "Montserrat", sans-serif;
+    color: #478668;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
 //viñetas
 %viñetas {
     list-style: square inside url(/imagen/caramelito.png);
     display: flex;
     flex-direction: column;
+}
+
+%carrito {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
 }

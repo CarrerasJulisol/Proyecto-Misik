@@ -1,27 +1,44 @@
+/* seccion de que es teuki */
+.descripcion-teuki {
+    margin: 58px 210px 30px 210px;
+
+    h1 {
+        @extend %titulo;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .texto-chico {
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Gruppo';
+    }
+    
+
+    div {
+        margin: 30px 0px;
+        
+        h2 {
+            @extend %subtitulo;
+        }
+    }
+
+}
+
+/* seccion de que tiene la teuki */
 .section-mes {
-    margin: 0px 130px;
+    margin: 0px 210px;
 
 
     .descripciones {
         @extend %texto-descripciones;
         text-align: left;
-        padding: 80px 0px 0px 80px;
 
-        h1 {
-            @extend %titulos;
-            margin-left: 0px;
-            padding: 0px 0px 20px 30px;
+        h2 {
+            @extend %subtitulo;
 
             @media only screen and (max-width:991px) {
                 padding: 5px;
-            }
-        }
-
-        p {
-            padding: 0px 30px;
-
-            @media only screen and (max-width:991px) {
-                padding:  5px;
             }
         }
 
@@ -29,8 +46,25 @@
             @extend %viñetas;
         }
 
+        button {
+            background-color: #549C74;
+            color: rgb(255, 255, 255);
+            border: white 1px outset;
+            position: relative;
+            top: 20px;
+            left: 50px;
+
+            &:hover {
+                background-color: #549C74;
+                border: white 1px inset;
+                box-shadow:2px 2px 10px #549C74;
+            }
+           
+                    
+        }
+
         .imagen-costado {
-            margin: 80px 20px 0px 500px;
+            margin: 0px 20px 0px 500px;
             width: 40%;
             position: relative;
             bottom: 150px;
@@ -55,4 +89,39 @@
         margin: 65px 0px;
     }
     
+}
+
+
+.carrito {
+    @extend %carrito;
+}
+
+.titulo-carro {
+    padding-left: 80px;
+}
+
+.cuadro {
+    margin: 0px 100px;
+    height: 100px;
+
+    .tabla {
+        display: flex;
+        justify-content: space-between;
+        
+        .img-carro {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .precio {
+        text-align: end;
+    }
+
+    .total {
+        font-size: 18px;
+        font-style: italic;
+        text-align: end;
+        border-top: dotted;
+    }
 }
