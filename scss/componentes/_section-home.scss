@@ -5,8 +5,7 @@ section {
 /*seccion uno de la pagina principal*/
 .section-one {
     margin-top: 56px;
-    background-image: url(../imagen/caja-especial.svg);
-    filter: grayscale(40%);
+    background-image: url(../imagen/fondo-teuki.svg);
     background-size: cover;
     height: 700px;
 
@@ -15,9 +14,7 @@ section {
         padding-top: 50px;
 
         .arriba-imagen {
-            background-color: #2f4f4f76;
-            margin: 30px 800px 0px 50px;
-            border-radius: 20px;
+            margin: 0px 800px 0px 50px;
             padding: 20px;
             color: aliceblue;
             z-index: 1;
@@ -53,11 +50,15 @@ section {
                 margin: 10px;
             }
 
+            a {
+                color: white;
+            }
+
         }
 
         .cambiar-posicion {
             position: relative;
-            top: 300px;
+            top: 250px;
 
             @media only screen and (min-width:768px) and (max-width:1290px) {
                 margin: 10px 300px;
@@ -69,7 +70,8 @@ section {
 
             @media only screen and (max-width:480px) {
                 margin: 10px;
-                top: 250px;
+                top: 200px;
+                left: 120px;
             }
         }
     }
@@ -146,32 +148,27 @@ section {
                 margin: 10px;
             }
 
+            a {
+                color: white;
+            }
+
         }
 
         .cambiar-posicion {
-            position: relative;
-            top: 300px;
-
-            @media only screen and (min-width:768px) and (max-width:1290px) {
-                margin: 150px 300px;
-            }
-
-            @media only screen and (min-width:481px) and (max-width:767px) {
-                margin:  20px;
-            }
-
             @media only screen and (max-width:480px) {
+                position: relative;
                 margin: 10px;
-                top: 250px;
+                left: 120px;
             }
         }
+
+
     }
 }
 
 /*seccion 3 de la pagina principal */
 .section-three {
-    background-image: url(../imagen/img-combo-fondo.svg);
-    filter: grayscale(40%);
+    background-image: url(../imagen/fondo-combo.svg);
     background-size: cover;
     background-position: center center;
     height: 700px;
@@ -179,14 +176,9 @@ section {
 
     div {
         
-        h2 {
-            padding-top: 30px;
-        }
 
         .arriba-imagen {
-            background-color: #2f4f4f76;
             margin: 30px 800px 0px 50px;
-            border-radius: 20px;
             padding: 20px;
             color: aliceblue;
             z-index: 1;
@@ -220,11 +212,15 @@ section {
                 margin: 10px;
             }
 
+            a {
+                color: white;
+            }
+
         }
 
         .cambiar-posicion {
             position: relative;
-            top: 300px;
+            top: 250px;
 
             @media only screen and (min-width:768px) and (max-width:1290px) {
                 margin: 150px 300px;
@@ -236,7 +232,8 @@ section {
 
             @media only screen and (max-width:480px) {
                 margin: 10px;
-                top: 250px;
+                top: 200px;
+                left: 120px;
             }
         }
     }

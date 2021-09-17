@@ -1,21 +1,17 @@
 //botones
 %botones {
-    background-color: #319B80;
+    background-color: #549C74;
     color: rgb(255, 255, 255);
-    font-size: medium;
-    text-decoration: none;
-    border-style: outset;
+    border: white 1px outset;
     border-radius: 20px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
+    padding: 5px 20px;
 
     &:hover {
         background-color: #549C74;
-        color: black;
-        border: white 3px inset;
+        border: white 1px inset;
+        box-shadow:2px 2px 10px #549C74;
     }
-
+    
 }
 
 //estilo de los textos
