@@ -440,7 +440,7 @@ section h2, section h1 {
   color: #0D0F0E;
 }
 
-.section-productos h1, .contacto h1, .section-quienes .descripciones h1, .section-two div h2 {
+.preguntas h1, .section-productos h1, .contacto h1, .section-quienes .descripciones h1, .section-two div h2 {
   font-family: "Montserrat", sans-serif;
   color: #478668;
   letter-spacing: 2px;
@@ -450,7 +450,7 @@ section h2, section h1 {
 }
 
 /* titulo con*/
-.descripcion-teuki h1 {
+.section-titulo div h1 {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1em;
   -webkit-text-fill-color: transparent;
@@ -460,7 +460,7 @@ section h2, section h1 {
 }
 
 /*subtitulos*/
-.section-mes .descripciones h2, .descripcion-teuki div h2 {
+.preguntas .contactos h2, .section-mes .descripciones h2, .descripcion-teuki div h2 {
   font-family: "Montserrat", sans-serif;
   color: #478668;
   letter-spacing: 2px;
@@ -480,17 +480,32 @@ section h2, section h1 {
 }
 
 /* seccion de que es teuki */
-.descripcion-teuki {
+.section-titulo {
   margin: 58px 210px 30px 210px;
 }
-.descripcion-teuki h1 {
+.section-titulo div {
+  display: flex;
+  background-image: url(../imagen/fondo-titulo.png);
+  background-position-y: 410%;
+  flex-direction: column;
+  align-items: center;
+}
+.section-titulo div h1 {
   text-align: center;
   font-size: 50px;
+  width: 200px;
+  background: white;
 }
-.descripcion-teuki .texto-chico {
+.section-titulo div .texto-chico {
   text-align: center;
   font-size: 14px;
   font-family: "Gruppo";
+  width: 200px;
+  background: white;
+}
+
+.descripcion-teuki {
+  margin: 0px 210px;
 }
 .descripcion-teuki div {
   margin: 30px 0px;
@@ -721,6 +736,59 @@ section h2, section h1 {
 
 .grid-container-combo {
   grid-template-columns: 150px 100px;
+}
+
+.preguntas {
+  margin: 58px 210px 0px 210px;
+}
+.preguntas h1 {
+  text-align: center;
+}
+.preguntas .contactos {
+  margin-top: 20px;
+}
+.preguntas .contactos h2 {
+  text-align: center;
+}
+.preguntas .contactos p {
+  text-align: center;
+  padding: 20px 0px;
+}
+.preguntas .contactos .lista-estilo {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.preguntas .contactos .lista-estilo .tarjetas {
+  background: whitesmoke;
+  box-shadow: 0px 2px 5px 0px darkgrey;
+  width: 250px;
+}
+.preguntas .contactos .lista-estilo .tarjetas:hover {
+  transform: translateY(10px);
+}
+.preguntas .contactos .lista-estilo .redes {
+  margin: 30px;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+.preguntas .contactos .lista-estilo .redes .tam-img {
+  width: 50px;
+}
+.preguntas .contactos .formulario {
+  margin: 0px 150px;
+  height: 400px;
+  width: 700px;
+}
+.preguntas .contactos .formulario .posicion-boton {
+  position: absolute;
+  left: 676px;
 }
 
 /*# sourceMappingURL=style.css.map */
