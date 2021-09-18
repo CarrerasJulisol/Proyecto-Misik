@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap");
 body {
   background-color: white;
@@ -29,13 +30,29 @@ body .div-container {
   font-family: "Encode";
   src: url("fuentes/Encode-Light") format("truetype");
 }
-header .tamaño-logo {
-  width: 20%;
+.tamaño-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
-header .tamaño-icono-menu {
+.tamaño-logo .sin-mg {
+  margin: 0px 0px 0px 5px;
+}
+.tamaño-logo .nombre-logo {
+  font-family: "Comfortaa", cursive;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.tamaño-logo .img-logo {
+  width: 40px;
+}
+
+.tamaño-icono-menu {
   width: 20px;
 }
-header .menu-desplegable {
+
+.menu-desplegable {
   background-color: whitesmoke;
   font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -44,31 +61,31 @@ header .menu-desplegable {
   right: 0px;
   width: 30%;
 }
-header .menu-desplegable .menu-estilo, header .menu-desplegable .sub-menu {
+.menu-desplegable .menu-estilo, .menu-desplegable .sub-menu {
   color: #3DC4A3;
   list-style: none;
 }
-header .menu-desplegable .menu-estilo .sin-text-deco, header .menu-desplegable .sub-menu .sin-text-deco {
+.menu-desplegable .menu-estilo .sin-text-deco, .menu-desplegable .sub-menu .sin-text-deco {
   text-decoration: none;
   color: #3DC4A3;
 }
-header .menu-desplegable .menu-estilo .sin-text-deco:hover, header .menu-desplegable .sub-menu .sin-text-deco:hover {
+.menu-desplegable .menu-estilo .sin-text-deco:hover, .menu-desplegable .sub-menu .sin-text-deco:hover {
   color: black;
 }
 @media only screen and (max-width: 514px) {
-  header .menu-desplegable {
+  .menu-desplegable {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 991px) {
-  header .menu-cel {
+  .menu-cel {
     flex-wrap: inherit;
   }
-  header .menu-cel .tamaño-logo {
+  .menu-cel .tamaño-logo {
     width: 100px;
   }
 }
-
 /* cosas del footer */
 footer nav {
   height: 40px;

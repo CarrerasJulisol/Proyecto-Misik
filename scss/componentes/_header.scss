@@ -1,7 +1,24 @@
-header {
     .tamaño-logo {
-        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+
+        .sin-mg {
+            margin: 0px 0px 0px 5px;
+        }
+
+        .nombre-logo {
+            font-family: 'Comfortaa', cursive;
+            font-size: 12px;
+            letter-spacing: 2px;
+            }
+
+            .img-logo {
+                width: 40px;
+            }
     }
+    
 
     .tamaño-icono-menu {
         width: 20px;
@@ -45,5 +62,3 @@ header {
             }
         }
     }
-
-}
