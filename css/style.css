@@ -202,18 +202,17 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
 }
 .section-two div .orden-productos .productos-tamaño {
-  width: 200px;
-  border: 1px solid gray;
-  background-color: white;
+  width: 180px;
+  height: 200px;
+  background-color: whitesmoke;
   transition: all 2s;
-  border-radius: 10px;
 }
 .section-two div .orden-productos .productos-tamaño:hover {
-  transform: scale(1.2);
+  transform: scale(1.08);
   transition: all 2s;
+  box-shadow: 1px 1px 5px gray;
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .section-two div .orden-productos .productos-tamaño {
@@ -735,6 +734,7 @@ section h2, section h1 {
 .section-productos .columnas-productos .tarjeta:hover {
   transform: scale(1.05);
   transition: all 2s;
+  box-shadow: 1px 1px 5px gray;
 }
 
 /* estilo boton de volver arriba */
