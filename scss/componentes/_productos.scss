@@ -1,44 +1,61 @@
 .section-productos {
     h1 {
         @extend %titulos;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
     }
 
-    .grid-productos {
-        display: grid;
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 200px;
-        align-items: start;
-        justify-content: center;
+    .columnas-productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
-        .productos-tamaño-solo {
-            width:  200px;
-            border: 1px solid #bfaf90;
-            background-color: white;
+        .tarjeta {
+            width: 150px;
             display: flex;
-            align-items: center;
-            margin: 10px auto;
-        }
-
-        .productos-descripcion {
-            @extend %texto-productos;
-            margin: 10px;
-
-        }
-    }
-
-    .volver {
-        @extend %botones;
-        margin: 20px 500px;
-
-        @media only screen and (min-width:992px) and (max-width:1246) {
-            margin:  50px 100px;
-        }
-
-        @media only screen and (max-width:991px) {
-            margin: 10px;
-        }
-
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: whitesmoke;
+            transition: all 2s;
+            margin: 20px;
+    
+            .imagen {
+                width: 150px;
+                height: 170px;
+                border-bottom: ridge;
+            }
         
+            .img-tarjeta {
+                width: 100%;
+            }
+    
+            .texto-tarjeta {
+                text-align: right;
+                color: cadetblue;
+                font-style: italic;
+                width: 140px;
+                height: 40px;
+            }
+    
+            &:hover {
+                transform: scale(1.05);
+                transition: all 2s;
+            }
+        }
     }
 
+}
+
+/* estilo boton de volver arriba */
+
+.volver-arriba {
+    border-radius: 50%;
+    background-color: rgba(95, 158, 160, 0.66);
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px white;
 }
