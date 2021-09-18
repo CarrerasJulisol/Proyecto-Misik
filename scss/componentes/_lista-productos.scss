@@ -18,15 +18,15 @@
             width: 300px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
             background-color: whitesmoke;
             margin: 20px;
             align-items: center;
+            border: gray 1px solid;
     
             .imagen-ad {
                 width: 200px;
                 height: 200px;
-                border-bottom: ridge;
             }
         
             .img-adentro {
@@ -35,10 +35,14 @@
     
             .texto-tarjeta {
                 text-align: right;
+                padding: 2px 30px 0px 0px;
                 color: cadetblue;
-                font-style: italic;
-                width: 140px;
+                font-style: s;
+                width: 300px;
                 height: 40px;
+                font-size: 20px;
+                font-variant-caps: all-small-caps;
+                border-top: gray 1px solid;
             }
     
         }
@@ -64,6 +68,23 @@
             a {
                 color: white;
             }
+        }
+
+       .boton-a-combo {
+            background-color: transparent;
+            color: #549C74;
+            border: gray 1px outset;
+            border-radius: 20px;
+            padding: 5px 20px;
+            position: relative;
+            right: 150px;
+            top: 150px;
+    
+            &:hover {
+                border: white 1px inset;
+                box-shadow:2px 2px 10px #549C74;
+            }
+        
         }
     } 
 }

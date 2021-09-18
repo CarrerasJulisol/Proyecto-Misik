@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- link de iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <!-- link a mi css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- link a fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;300&display=swap" rel="stylesheet">
+
+    <!-- meta tags: DESCRIPCION -->
+    <meta name="description" content="Bocaditos coreanos de banana">
+
+    <!-- meta tags: KEYWORDS -->
+    <meta name="keywords" content="dulces, bocaditos, banana, caja dulces, coreanos">
+
+    <!-- meta tags: COPYRIGHT    -->
+    <meta name="copy" content="Misik">
+
+    <!-- meta tags de autor -->
+    <meta name="author" content="Julieta Carreras">
+
+    <!-- FAVICON usar tipo de archivo.ico es el icono de la pestaña -->
+    <link rel="shortcut icon" href="imagen/favicon.ico" type="image/x-icon">
+
+    <title>Productos | Bocaditos "Lotte"</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg menu-cel">
+            <div class="tamaño-logo">
+                <a class="navbar-brand sin-mg" href="index.html"><img src="./imagen/icono.png" class="img-logo"></a>
+                <a class="navbar-brand" href="index.html"><p class="nombre-logo">MISIK</p></a>
+             </div>
+            <p>
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="imagen/menu.ico" alt="menú" class="tamaño-icono-menu">
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body menu-desplegable">
+                    <ul class="menu-estilo">
+                        <li><a href="index.html" class="sin-text-deco">Inicio</a></li>
+                        <li><a data-bs-toggle="collapse" href="#collapseProductos" aria-expanded="false" aria-controls="collapseExample" class="collapsed sin-text-deco">
+                            Productos<i class="bi bi-caret-down-fill img"></i>
+                            </a>
+                            <div id="collapseProductos" class="collapse">
+                                <ul class="sub-menu">
+                                    <li><a href="producto-del-mes.html" class="sin-text-deco">Teuki</a></li>
+                                    <li><a href="productos.html" class="sin-text-deco">Todos</a></li>
+                                    <li><a href="tu-combo.html" class="sin-text-deco">Combos</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="nosotros.html" class="sin-text-deco">Nosotros</a></li>
+                        <li><a href="ayuda.html" class="sin-text-deco">Ayuda</a></li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section class="prod-indv">
+        <h1>Bocaditos 'Lotte'</h1>
+        <div class="grid-productos"> 
+            <!-- tarjeta con imagen del producto -->
+                <div class="tarjetas">
+                    <div class="imagen-ad">
+                        <img src="./imagen/bocadillos.svg" alt="Bocaditos de banana" class="img-adentro">
+                    </div>
+                    <div class="texto-tarjeta">
+                        Precio $95
+                    </div>
+                </div>
+                <!-- descrpicion del producto  -->
+            <div>
+                <p class="prod-descrp">
+                Cajita de 12 bocaditos sabor banana.
+                </p>
+                <!-- boton de compra -->
+                <button class="boton-comprar">
+                    <a href="#">Comprar</a>
+                </button>
+                <!-- boton de añadir al combo -->
+                <button class="boton-a-combo">
+                    <a href="#">Añadir a mi combo</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- seccion del carrusel  -->
+    <section class="carrusel-section"> 
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="orden-productos">
+                <a href="producto-16.html"><img src="imagen/gomitas-rojas-ginseng.jpg" alt="Gomitas 'Ginseng'" class="productos-tamaño"></a>
+                <a href="producto-17.html"><img src="imagen/aros-cebolla.svg" alt="Aros de cebolla" class="productos-tamaño"></a>
+                <a href="producto-15.html"><img src="imagen/snack-coreano-pizza.svg" alt="Snacks 'Kkobuk' de pizza" class="productos-tamaño"></a>
+                <a href="producto-14.html"><img src="imagen/tropicana.svg" alt="Bebida 'Tropicana'" class="productos-tamaño"></a>
+                <a href="producto-13.html"><img src="imagen/taiki.svg" alt="Galletitas 'Taiki'" class="productos-tamaño"></a>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p class="orden-productos">
+                <a href="producto-6.html"><img src="imagen/papas.svg" alt="Papas fritas" class="productos-tamaño"></a>
+                <a href="producto-7.html"><img src="imagen/ramen.svg" alt="Ramen picante" class="productos-tamaño"></a>
+                <a href="producto-8.html"><img src="imagen/caramelosUva.svg" alt="Caramelos de uva" class="productos-tamaño"></a>
+                <a href="producto-9.html"><img src="imagen/coco-durazno.svg" alt="Bebida de coco y durazno" class="productos-tamaño"></a>
+                <a href="producto-10.html"><img src="imagen/gomitas.svg" alt="Gomitas de sandía" class="productos-tamaño"></a>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p class="orden-productos">
+                <a href="producto-11.html"><img src="imagen/Orion-Gummy.svg" alt="Gomitas de durazno" class="productos-tamaño"></a>
+                <a href="producto-12.html"><img src="imagen/snack-coreano-pizza.svg" alt="Snacks 'Kkobuk'" class="productos-tamaño"></a>
+                <a href="producto-2.html"><img src="imagen/galletitas.svg" alt="Galletitas de chocolate" class="productos-tamaño"></a>
+                <a href="producto-18.html"><img src="imagen/bocadillos.svg" alt="Bocadillos de banana" class="productos-tamaño"></a>
+                <a href="producto-5.html"><img src="imagen/snacks.svg" alt="Snacks sabor camarón" class="productos-tamaño"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- seccion del carrito -->
+    <section>
+        <!-- boton del carrito  -->
+        <button type="button" class="btn btn-dark carrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <img src="imagen/shopping-cart.svg" alt="carrito de compra">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+01 <span class="visually-hidden">Cosas en el carrito</span></span>
+        </button>
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header titulo-carro">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Carrito</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small cuadro">
+                <div class="tabla">
+                    <div>
+                        Teuki de Septiembre
+                    </div>
+                    <div>
+                        <img src="imagen/caja-mes.svg" alt="Teuki" class="img-carro">
+                    </div>
+                </div>
+                <div class="precio">Precio: $400</div>
+                <div class="total">
+                    Total: $400
+                </div>
+            </div>
+            </div>
+    </section>
+
+
+    
+
+
+    <!-- footer -->
+    <footer>
+        <nav class="sticky-bottom navbar-light bg-light">
+            <div class="posicion-footer">
+                <div class="container-fluid">
+                    <a class="footer-estilo elementos-estilo" href="#"><img src="imagen/logo-misik.ico" class="logo-footer">© 2021 Misik, todos los derechos reservados.</a>
+                </div>
+                <div>
+                   <ul class="footer-estilo posicion-lista">
+                       <li>
+                           <a href="https://www.instagram.com" class="elementos-estilo redes"><i class="bi bi-instagram"></i></a>
+                        </li>
+                       <li>
+                           <a href="https://www.youtube.com" class="elementos-estilo redes"><i class="bi bi-youtube"></i></a>
+                        </li>
+                       <li>
+                           <a href="https://www.facebook.com" class="elementos-estilo redes"><i class="bi bi-facebook"></i></a>
+                        </li>
+                   </ul> 
+                </div>
+          </nav>
+    </footer>
+
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -23,7 +23,10 @@
             .imagen {
                 width: 150px;
                 height: 170px;
-                border-bottom: ridge;
+                border-bottom-color: antiquewhite;
+                border-bottom-style: ridge;
+                display: flex;
+                align-items: stretch;
             }
         
             .img-tarjeta {
@@ -32,10 +35,18 @@
     
             .texto-tarjeta {
                 text-align: right;
-                color: cadetblue;
                 font-style: italic;
                 width: 140px;
-                height: 40px;
+                height: 45px;
+
+                .estilo-texto {
+                    color: gray;
+                    font-size: 12px;
+                }
+
+                .estilo-precio {
+                    color: cadetblue;
+                }
             }
     
             &:hover {
