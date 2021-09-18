@@ -16,12 +16,12 @@
 
     <!-- link a fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;300&display=swap" rel="stylesheet">
-    
+
     <!-- meta tags: DESCRIPCION -->
-    <meta name="description" content="Galletas coreanas 'Peperos' de chocolate.">
+    <meta name="description" content="Caramelos coreanos maichiu de uva, manzana, durazno y frutilla/fresa.">
 
     <!-- meta tags: KEYWORDS -->
-    <meta name="keywords" content="galletas, galletitas, de chocolate, coreanas, peperos">
+    <meta name="keywords" content="dulces, caramelos, uva, frutilla, fresa, durazno, manzana, caja dulces, coreanos">
 
     <!-- meta tags: COPYRIGHT    -->
     <meta name="copy" content="Misik">
@@ -32,10 +32,10 @@
     <!-- FAVICON usar tipo de archivo.ico es el icono de la pestaña -->
     <link rel="shortcut icon" href="imagen/favicon.ico" type="image/x-icon">
 
-    <title>Productos | Peperos</title>
+    <title>Productos | Caramelos "Maichiu"</title>
 </head>
 <body>
-    
+
     <header>
         <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg menu-cel">
             <div class="container-fluid">
@@ -68,19 +68,102 @@
             </div>
           </nav>
     </header>
-
-    <section  class="section-productos">
-        <h1>Peperos</h1>
-        <div class="grid-productos">
-            <div class="producto-img">
-                <img src="imagen/peperos.svg" alt="peperos" class="productos-tamaño-solo">
-            </div>
-                <div class="productos-descripcion">
-                    Los peperos con chocolate son un clásico en la...
+    
+    <section class="prod-indv">
+        <h1>Caramelos</h1>
+        <div class="grid-productos"> 
+                <div class="tarjetas">
+                    <div class="imagen-ad">
+                        <img src="./imagen/peperos.svg" alt="aros de cebolla" class="img-adentro">
+                    </div>
+                    <div class="texto-tarjeta">
+                        Precio $90
+                    </div>
                 </div>
+
+            <div>
+                <p class="prod-descrp">
+                Caramelos de Uva, Frutilla, Ananá o Durazno.
+                </p>
+                <button class="boton-comprar">
+                    <a href="#">Comprar</a>
+                </button>
+
+            </div>
         </div>
-        <p class="volver"><a href="productos.html">↩ Volver</a></p>
     </section>
+
+
+    <!-- seccion del carrusel  -->
+    <section class="carrusel-section"> 
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="orden-productos">
+                <a href="producto-1.html"><img src="imagen/caramalos.svg" alt="caramelos" class="productos-tamaño"></a>
+                <a href="producto-2.html"><img src="imagen/galletitas.svg" alt="galletitas" class="productos-tamaño"></a>
+                <a href="producto-3.html"><img src="imagen/gaseosa.svg" alt="gaseosa en lata" class="productos-tamaño"></a>
+                <a href="producto-4.html"><img src="imagen/peperos.svg" alt="peperos" class="productos-tamaño"></a>
+                <a href="producto-5.html"><img src="imagen/snacks.svg" alt="snacks" class="productos-tamaño"></a>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p class="orden-productos">
+                <a href="producto-6.html"><img src="imagen/caramalos.svg" alt="caramelos" class="productos-tamaño"></a>
+                <a href="producto-7.html"><img src="imagen/galletitas.svg" alt="galletitas" class="productos-tamaño"></a>
+                <a href="producto-8.html"><img src="imagen/gaseosa.svg" alt="gaseosa en lata" class="productos-tamaño"></a>
+                <a href="producto-9.html"><img src="imagen/peperos.svg" alt="peperos" class="productos-tamaño"></a>
+                <a href="producto-10.html"><img src="imagen/aros-cebolla.svg" alt="snacks -aros de cebolla" class="productos-tamaño"></a>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p class="orden-productos">
+                <a href="producto-11.html"><img src="imagen/caramelos-uva.svg" alt="caramelos de uva" class="productos-tamaño"></a>
+                <a href="producto-12.html"><img src="imagen/ramen.svg" alt="ramen picante" class="productos-tamaño"></a>
+                <a href="producto-13.html"><img src="imagen/uva-gaseosa.svg" alt="gaseosa de uva blanca" class="productos-tamaño"></a>
+                <a href="producto-14.html"><img src="imagen/bocadillos.svg" alt="bocadillos de banana" class="productos-tamaño"></a>
+                <a href="producto-15.html"><img src="imagen/papas.svg" alt="papas fritas" class="productos-tamaño"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- seccion del carrito -->
+    <section>
+        <!-- boton del carrito  -->
+        <button type="button" class="btn btn-dark carrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <img src="imagen/shopping-cart.svg" alt="carrito de compra">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+01 <span class="visually-hidden">Cosas en el carrito</span></span>
+        </button>
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header titulo-carro">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Carrito</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small cuadro">
+                <div class="tabla">
+                    <div>
+                        Teuki de Septiembre
+                    </div>
+                    <div>
+                        <img src="imagen/caja-mes.svg" alt="Teuki" class="img-carro">
+                    </div>
+                </div>
+                <div class="precio">Precio: $400</div>
+                <div class="total">
+                    Total: $400
+                </div>
+            </div>
+            </div>
+    </section>
+
+
+    
+
 
     <!-- footer -->
     <footer>

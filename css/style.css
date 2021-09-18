@@ -417,14 +417,14 @@ section h2, section h1 {
   font-size: 35px;
 }
 
-.section-mes .descripciones .boton-compra, .section-one div .boton, .section-two div .boton, .section-three div .boton {
+.prod-indv .grid-productos .boton-comprar, .section-mes .descripciones .boton-compra, .section-one div .boton, .section-two div .boton, .section-three div .boton {
   background-color: #549C74;
   color: white;
   border: white 1px outset;
   border-radius: 20px;
   padding: 5px 20px;
 }
-.section-mes .descripciones .boton-compra:hover, .section-one div .boton:hover, .section-two div .boton:hover, .section-three div .boton:hover {
+.prod-indv .grid-productos .boton-comprar:hover, .section-mes .descripciones .boton-compra:hover, .section-one div .boton:hover, .section-two div .boton:hover, .section-three div .boton:hover {
   background-color: #549C74;
   border: white 1px inset;
   box-shadow: 2px 2px 10px #549C74;
@@ -435,7 +435,7 @@ section h2, section h1 {
   text-align: left;
 }
 
-.preguntas h1, .section-productos h1, .contacto h1, .section-quienes .descripciones h1, .section-two div h2 {
+.prod-indv h1, .preguntas h1, .section-productos h1, .contacto h1, .section-quienes .descripciones h1, .section-two div h2 {
   font-family: "Montserrat", sans-serif;
   color: #478668;
   letter-spacing: 2px;
@@ -804,6 +804,107 @@ section h2, section h1 {
 .preguntas .contactos .formulario .posicion-boton {
   position: absolute;
   left: 676px;
+}
+
+.prod-indv {
+  margin: 60px 210px 20px 210px;
+}
+.prod-indv h1 {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.prod-indv .grid-productos {
+  display: grid;
+  grid-auto-rows: 400px;
+  grid-template-columns: 500px 300px;
+  justify-items: center;
+}
+.prod-indv .grid-productos .tarjetas {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: whitesmoke;
+  margin: 20px;
+  align-items: center;
+}
+.prod-indv .grid-productos .tarjetas .imagen-ad {
+  width: 200px;
+  height: 200px;
+  border-bottom: ridge;
+}
+.prod-indv .grid-productos .tarjetas .img-adentro {
+  width: 100%;
+}
+.prod-indv .grid-productos .tarjetas .texto-tarjeta {
+  text-align: right;
+  color: cadetblue;
+  font-style: italic;
+  width: 140px;
+  height: 40px;
+}
+.prod-indv .grid-productos .texto-tarjeta {
+  color: cadetblue;
+}
+.prod-indv .grid-productos .prod-descrp {
+  display: flex;
+  align-items: stretch;
+  margin: 50px;
+  margin-left: 0px;
+}
+.prod-indv .grid-productos .boton-comprar {
+  position: relative;
+  left: 150px;
+  top: 150px;
+}
+.prod-indv .grid-productos .boton-comprar a {
+  color: white;
+}
+
+/* seccion del carrusel */
+.carrusel-section {
+  margin: 50px;
+}
+.carrusel-section .orden-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.carrusel-section .orden-productos .productos-tamaño {
+  width: 180px;
+  height: 200px;
+  background-color: whitesmoke;
+  transition: all 2s;
+}
+.carrusel-section .orden-productos .productos-tamaño:hover {
+  transform: scale(1.08);
+  transition: all 2s;
+  box-shadow: 1px 1px 5px gray;
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .carrusel-section .orden-productos .productos-tamaño {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .carrusel-section .orden-productos .productos-tamaño {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .carrusel-section .orden-productos {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .carrusel-section .orden-productos {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,113 @@
+.prod-indv {
+    margin: 60px 210px 20px 210px;
+
+    h1 {
+        @extend %titulos;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .grid-productos {  
+        display: grid;
+        grid-auto-rows: 400px;
+        grid-template-columns: 500px 300px;
+        justify-items: center;
+
+        .tarjetas {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: whitesmoke;
+            margin: 20px;
+            align-items: center;
+    
+            .imagen-ad {
+                width: 200px;
+                height: 200px;
+                border-bottom: ridge;
+            }
+        
+            .img-adentro {
+                width: 100%;
+            }
+    
+            .texto-tarjeta {
+                text-align: right;
+                color: cadetblue;
+                font-style: italic;
+                width: 140px;
+                height: 40px;
+            }
+    
+        }
+
+
+            .texto-tarjeta {
+                color: cadetblue;
+            }
+        
+        .prod-descrp {
+            display: flex;
+            align-items: stretch;
+            margin: 50px;
+            margin-left: 0px;
+        }
+
+        .boton-comprar {
+            @extend %botones;
+            position: relative;
+            left: 150px;
+            top: 150px;
+
+            a {
+                color: white;
+            }
+        }
+    } 
+}
+
+/* seccion del carrusel */
+.carrusel-section {
+    margin: 50px;
+
+        .orden-productos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+                .productos-tamaño {
+                    width:  180px;
+                    height: 200px;
+                    background-color: whitesmoke;
+                    transition: all 2s;
+
+                    &:hover {
+                        transform: scale(1.08);
+                        transition: all 2s;
+                        box-shadow: 1px 1px 5px gray;
+                    }
+
+                    @media only screen and (min-width:481px) and (max-width:767px) {
+                        display: flex;
+                        align-items: center;
+                        margin: 10px auto;
+                    }
+
+                    @media only screen and (max-width:480px) {
+                        display: flex;
+                        align-items: center;
+                        margin: 10px auto;
+                    }
+                }
+
+                @media only screen and (min-width:481px) and (max-width:767px) {
+                    flex-wrap: wrap;
+                }
+
+                @media only screen and (max-width:480px) {
+                    flex-wrap: wrap;
+                } 
+        }
+}
