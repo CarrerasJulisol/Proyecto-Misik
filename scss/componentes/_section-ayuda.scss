@@ -67,3 +67,18 @@
         }
     }
 }
+
+// color de los botones del acordión
+
+.accordion-button:not(.collapsed) {
+    color: #478668;
+    background-color: #0080801f;
+    box-shadow: inset 0 -1px 0 #0080801f;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #478668;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #47866792;
+}

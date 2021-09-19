@@ -70,6 +70,7 @@
           </nav>
     </header>
 
+    <!-- seccion del titulo -->
     <section class="section-titulo">
         <div>
             <h1>Teuki</h1>
@@ -77,7 +78,6 @@
                 la caja del mes
             </p>
         </div>
-            
     </section>
 
     <!-- que es la teuki y como funciona-->
@@ -120,32 +120,34 @@
         </div>
     </section>
 
-    <button type="button" class="btn btn-dark carrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-        <img src="imagen/shopping-cart.svg" alt="carrito de compra">
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+01 <span class="visually-hidden">Cosas en el carrito</span></span>
-    </button>
+    <!-- seccion del carrito -->
+    <section>
+        <button type="button" class="btn btn-dark carrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <img src="imagen/shopping-cart.svg" alt="carrito de compra">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+01 <span class="visually-hidden">Cosas en el carrito</span></span>
+        </button>
 
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header titulo-carro">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Carrito</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small cuadro">
-        <div class="tabla">
-            <div>
-                Teuki de Septiembre
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header titulo-carro">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Carrito</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small cuadro">
+            <div class="tabla">
+                <div>
+                    Teuki de Septiembre
+                </div>
+                <div>
+                    <img src="imagen/caja-mes.svg" alt="Teuki" class="img-carro">
+                </div>
             </div>
-            <div>
-                <img src="imagen/caja-mes.svg" alt="Teuki" class="img-carro">
+            <div class="precio">Precio: $400</div>
+            <div class="total">
+                Total: $400
             </div>
         </div>
-        <div class="precio">Precio: $400</div>
-        <div class="total">
-            Total: $400
         </div>
-    </div>
-    </div>
-
+    </section>
     <!-- footer -->
     <footer>
         <nav class="sticky-bottom navbar-light bg-light">

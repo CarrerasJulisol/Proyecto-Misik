@@ -1,5 +1,38 @@
+.section-titulo-combo {
+    margin: 65px 210px 0px 210px;
+   
+    div {
+        display: flex;
+        background-image: url(../imagen/fondo-titulo.png);
+        background-position-y: 500%;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            @extend %titulo;
+            text-align: center;
+            font-size: 45px;
+            width: 300px;
+            background: white;
+        }
+
+        .texto-chico-combo {
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Gruppo';
+        width: 300px;
+        background: white;
+        }
+
+    }
+     
+   
+}
+
+
+
 .section-combo {
-    margin: 80px 80px 100px 80px;
+    margin: 0px 80px 100px 80px;
 
     h1 {
         text-align: center;
@@ -7,9 +40,61 @@
 
     .grid-container-combo {
         display: grid;
-        grid-template-columns: repeat(auto-fit, 300px);
-        grid-template-rows: 200px;
+        grid-template-columns: repeat(auto-fit, 80%);
+        grid-template-rows: 100px 200px 250px;
         justify-content: center;
         padding: 50px;
+
+        .como-combo {
+            margin: 30px 0px;
+            
+            h2 {
+                @extend %subtitulo;
+            }
+        }
+
+        .img-carru {
+            width: 400px;
+        }
+    }
+
+    // carrusel
+    .orden-productos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+            .productos-tamaño {
+                width:  180px;
+                height: 200px;
+                background-color: whitesmoke;
+                transition: all 2s;
+
+                &:hover {
+                    transform: scale(1.08);
+                    transition: all 2s;
+                    box-shadow: 1px 1px 5px gray;
+                }
+
+                @media only screen and (min-width:481px) and (max-width:767px) {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px auto;
+                }
+
+                @media only screen and (max-width:480px) {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px auto;
+                }
+            }
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                flex-wrap: wrap;
+            }
+
+            @media only screen and (max-width:480px) {
+                flex-wrap: wrap;
+            } 
     }
 }

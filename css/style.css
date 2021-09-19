@@ -462,7 +462,7 @@ section h2, section h1 {
 }
 
 /* titulo con*/
-.section-titulo div h1 {
+.section-titulo-combo div h1, .section-titulo div h1 {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1em;
   -webkit-text-fill-color: transparent;
@@ -472,7 +472,7 @@ section h2, section h1 {
 }
 
 /*subtitulos*/
-.preguntas .contactos h2, .section-mes .descripciones h2, .descripcion-teuki div h2 {
+.preguntas .contactos h2, .section-combo .grid-container-combo .como-combo h2, .section-mes .descripciones h2, .descripcion-teuki div h2 {
   font-family: "Montserrat", sans-serif;
   color: #478668;
   letter-spacing: 2px;
@@ -493,7 +493,7 @@ section h2, section h1 {
 
 /* seccion de que es teuki */
 .section-titulo {
-  margin: 58px 210px 30px 210px;
+  margin: 65px 210px 30px 210px;
 }
 .section-titulo div {
   display: flex;
@@ -700,18 +700,88 @@ section h2, section h1 {
   left: 600px;
 }
 
+.section-titulo-combo {
+  margin: 65px 210px 0px 210px;
+}
+.section-titulo-combo div {
+  display: flex;
+  background-image: url(../imagen/fondo-titulo.png);
+  background-position-y: 500%;
+  flex-direction: column;
+  align-items: center;
+}
+.section-titulo-combo div h1 {
+  text-align: center;
+  font-size: 45px;
+  width: 300px;
+  background: white;
+}
+.section-titulo-combo div .texto-chico-combo {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Gruppo";
+  width: 300px;
+  background: white;
+}
+
 .section-combo {
-  margin: 80px 80px 100px 80px;
+  margin: 0px 80px 100px 80px;
 }
 .section-combo h1 {
   text-align: center;
 }
 .section-combo .grid-container-combo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-template-rows: 200px;
+  grid-template-columns: repeat(auto-fit, 80%);
+  grid-template-rows: 100px 200px 250px;
   justify-content: center;
   padding: 50px;
+}
+.section-combo .grid-container-combo .como-combo {
+  margin: 30px 0px;
+}
+.section-combo .grid-container-combo .img-carru {
+  width: 400px;
+}
+.section-combo .orden-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.section-combo .orden-productos .productos-tamaño {
+  width: 180px;
+  height: 200px;
+  background-color: whitesmoke;
+  transition: all 2s;
+}
+.section-combo .orden-productos .productos-tamaño:hover {
+  transform: scale(1.08);
+  transition: all 2s;
+  box-shadow: 1px 1px 5px gray;
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .section-combo .orden-productos .productos-tamaño {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section-combo .orden-productos .productos-tamaño {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .section-combo .orden-productos {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section-combo .orden-productos {
+    flex-wrap: wrap;
+  }
 }
 
 .section-productos h1 {
@@ -736,7 +806,7 @@ section h2, section h1 {
 .section-productos .columnas-productos .tarjeta .imagen {
   width: 150px;
   height: 170px;
-  border-bottom-color: antiquewhite;
+  border-bottom-color: #0080801f;
   border-bottom-style: ridge;
   display: flex;
   align-items: stretch;
@@ -832,6 +902,19 @@ section h2, section h1 {
   left: 676px;
 }
 
+.accordion-button:not(.collapsed) {
+  color: #478668;
+  background-color: #0080801f;
+  box-shadow: inset 0 -1px 0 #0080801f;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #478668;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #47866792;
+}
+
 .prod-indv {
   margin: 60px 210px 20px 210px;
 }
@@ -861,7 +944,8 @@ section h2, section h1 {
   height: 200px;
 }
 .prod-indv .grid-productos .tarjetas .img-adentro {
-  width: 100%;
+  width: 200px;
+  height: 200px;
 }
 .prod-indv .grid-productos .tarjetas .texto-tarjeta {
   text-align: right;
