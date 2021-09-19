@@ -497,7 +497,7 @@ section h2, section h1 {
 }
 .section-titulo div {
   display: flex;
-  background-image: url(../imagen/fondo-titulo.png);
+  background-image: url(../imagen/fondo-titulo.svg);
   background-position-y: 410%;
   flex-direction: column;
   align-items: center;
@@ -705,7 +705,7 @@ section h2, section h1 {
 }
 .section-titulo-combo div {
   display: flex;
-  background-image: url(../imagen/fondo-titulo.png);
+  background-image: url(../imagen/fondo-titulo.svg);
   background-position-y: 500%;
   flex-direction: column;
   align-items: center;
