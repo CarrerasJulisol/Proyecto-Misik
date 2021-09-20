@@ -36,19 +36,7 @@ section {
 
         .boton {
             @extend %botones;
-            margin: 20px 580px;
-
-            @media only screen and (min-width:768px) and (max-width:1290px) {
-                margin: 20px;
-            }
-
-            @media only screen and (min-width:481px) and (max-width:767px) {
-                margin: 20px;
-            }
-
-            @media only screen and (max-width:480px) {
-                margin: 10px;
-            }
+            width: 200px;
 
             a {
                 color: white;
@@ -58,21 +46,8 @@ section {
 
         .cambiar-posicion {
             position: relative;
-            top: 250px;
-
-            @media only screen and (min-width:768px) and (max-width:1290px) {
-                margin: 10px 300px;
-            }
-
-            @media only screen and (min-width:481px) and (max-width:767px) {
-                margin: 20px;
-            }
-
-            @media only screen and (max-width:480px) {
-                margin: 10px;
-                top: 200px;
-                left: 120px;
-            }
+            top: 100px;
+            left: 30%;
         }
     }
 
@@ -109,43 +84,23 @@ section {
                         box-shadow: 1px 1px 5px gray;
                     }
 
-                    @media only screen and (min-width:481px) and (max-width:767px) {
+
+                    @media only screen and (max-width:767px) {
                         display: flex;
                         align-items: center;
                         margin: 10px auto;
                     }
 
-                    @media only screen and (max-width:480px) {
-                        display: flex;
-                        align-items: center;
-                        margin: 10px auto;
-                    }
                 }
 
-                @media only screen and (min-width:481px) and (max-width:767px) {
-                    flex-wrap: wrap;
-                }
-
-                @media only screen and (max-width:480px) {
+                @media only screen and (max-width:900px) {
                     flex-wrap: wrap;
                 } 
         }
 
+        
         .boton {
             @extend %botones;
-            margin: 20px 580px;
-
-            @media only screen and (min-width:768px) and (max-width:1290px)  {
-                margin: 20px 300px;
-            }
-
-            @media only screen and (min-width:481px) and (max-width:767px) {
-                margin:  20px;
-            }
-
-            @media only screen and (max-width:480px) {
-                margin: 10px;
-            }
 
             a {
                 color: white;
@@ -154,16 +109,23 @@ section {
         }
 
         .cambiar-posicion {
-            @media only screen and (max-width:480px) {
-                position: relative;
-                margin: 10px;
-                left: 120px;
+            position: relative;
+            left: 46%;
+
+            @media only screen and (min-width:426px) and (max-width:899px) {
+                left: 41%;
             }
+
+            @media only screen and (max-width:425px) {
+                left: 30%;
+            }
+
         }
 
 
     }
 }
+
 
 /*seccion 3 de la pagina principal */
 .section-three {
@@ -197,19 +159,7 @@ section {
 
         .boton {
             @extend %botones;
-            margin: 20px 580px;
-
-            @media only screen and (min-width:768px) and (max-width:1290px)  {
-                margin: 20px;
-            }
-
-            @media only screen and (min-width:481px) and (max-width:767px) {
-                margin:  20px;
-            }
-
-            @media only screen and (max-width:480px) {
-                margin: 10px;
-            }
+            width: 200px;
 
             a {
                 color: white;
@@ -219,22 +169,11 @@ section {
 
         .cambiar-posicion {
             position: relative;
-            top: 250px;
+            top: 100px;
+            left: 30%;
 
-            @media only screen and (min-width:768px) and (max-width:1290px) {
-                margin: 150px 300px;
-            }
-
-            @media only screen and (min-width:481px) and (max-width:767px) {
-                margin:  20px;
-            }
-
-            @media only screen and (max-width:480px) {
-                margin: 10px;
-                top: 200px;
-                left: 120px;
-            }
         }
+
     }
 
     @media only screen and (max-width:480px) {

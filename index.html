@@ -40,13 +40,15 @@
 </head>
 
 <body>
-
+    <!-- seccion del header -->
     <header>
-        <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg menu-cel">
+        <nav class="navbar fixed-top navbar-light fondo navbar-expand-lg menu-cel">
+            <!-- logo y nombre -->
             <div class="tamaño-logo">
                 <a class="navbar-brand sin-mg" href="index.html"><img src="./imagen/icono.png" class="img-logo"></a>
                 <a class="navbar-brand" href="index.html"><p class="nombre-logo">MISIK</p></a>
              </div>
+             <!-- boton e icono del menu -->
             <p>
                 <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <img src="imagen/menu.ico" alt="menú" class="tamaño-icono-menu">
@@ -54,6 +56,7 @@
             </p>
             <div class="collapse" id="collapseExample">
                 <div class="card card-body menu-desplegable">
+                    <!-- lista del menu -->
                     <ul class="menu-estilo">
                         <li><a href="index.html" class="sin-text-deco">Inicio</a></li>
                         <li><a data-bs-toggle="collapse" href="#collapseProductos" aria-expanded="false" aria-controls="collapseExample" class="collapsed sin-text-deco">
@@ -75,10 +78,11 @@
           </nav>
     </header>
 
-    <!-- cuando el usuario entra en la pagina, lo primero que ve es el producto del mes -->
+    <!-- seccion del producto del mes-->
     <section class="section-one">
         <div>
             <h1 class="titulo">La Teuki del mes</h1>
+            <!-- descripcion del rpoducto principal -->
             <p class="arriba-imagen">
                 La Teuki es nuestra caja especial del mes.
                 ¿Qué tiene de especial? ¡Es que cada mes los productos
@@ -87,6 +91,7 @@
                 Esta vez nuestra caja tiene los siguientes productos:
                 2 gaseosas, 3 paquetes de papitas, 5 variedades de gomitas, etc.
             </p>
+            <!-- boton para ir a pag producto del mes -->
             <button class="boton cambiar-posicion">
                 <a href="producto-del-mes.html">¡Quiero una Teuki!</a>
             </button>
@@ -97,6 +102,7 @@
     <section class="section-two">
         <div>
             <h2>Productos</h2>
+            <!-- pequeña muestra de agunos productos -->
                     <div class="orden-productos">
                         <a href="producto-1.html"><img src="imagen/caramalos.svg" alt="caramelos" class="productos-tamaño"></a>
                         <a href="producto-2.html"><img src="imagen/galletitas.svg" alt="galletitas" class="productos-tamaño"></a>
@@ -104,21 +110,25 @@
                         <a href="producto-4.html"><img src="imagen/peperos.svg" alt="peperos" class="productos-tamaño"></a>
                         <a href="producto-5.html"><img src="imagen/snacks.svg" alt="snacks" class="productos-tamaño"></a>
                     </div>
+            <!-- boton para ir a la pagina con todos los productos -->
             <button class="boton cambiar-posicion">
                 <a href="productos.html">Más productos</a>
             </button>
         </div>
     </section>
-    <!-- en esta seccion el usuario puede crear su propio combo -->
+
+    <!-- seccion para crear su propio combo -->
     <section class="section-three">
         <div>
             <h2 class="titulo">¡Armá tu combo!</h2>
+            <!-- descrpicion del producto "combo" -->
             <p class="arriba-imagen">
                 Vas a poder armar tu propia caja. ¡Ahora con la opción "Armá tu combo"
                 podes personalizar tu caja y elegir los productos que más te gusten!
                 El único requisito es seleccionar entre 15 y 20 unidades para completar la caja.
                 Pero, ojo, tengo una cosita más que contarte: ¡hay más tamaños de cajas!
             </p>
+            <!-- boton para ir a la pagina del combo -->
             <button class="boton cambiar-posicion">
                 <a href="tu-combo.html">Crear mi combo</a>
             </button>

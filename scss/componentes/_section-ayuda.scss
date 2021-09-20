@@ -1,5 +1,5 @@
 .preguntas {
-    margin: 58px 210px 0px 210px;
+    margin: 60px 210px 0px 210px;
 
     h1 {
         @extend %titulos;
@@ -28,17 +28,20 @@
             .tarjetas {
                 background: whitesmoke;
                 box-shadow: 0px 2px 5px 0px darkgrey;
-                width: 250px;
+                width: 30%;
     
                 &:hover {
                     transform: translateY(10px);
+                }
+
+                @media only screen and (max-width:1268px) {
+                    width: 30%;
                 }
             }
     
             .redes {
             margin: 30px;
             height: 100px;
-            width: 300px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -48,24 +51,34 @@
                 .tam-img {
                     width: 50px;
                 }
+
+                @media only screen and (max-width:1268px) {
+                    margin: 15%;
+                    padding: 0px;
+                }
             
             }
         }
 
         .formulario {
-            margin: 0px 150px;
             height: 400px;
-            width: 700px;
+            width: 90%;
+            margin: 0px 20px 0px 20px;
 
             .posicion-boton {
                 position: absolute;
-                left: 676px;
+                left: 45%;
             }
             
     
             
         }
     }
+
+    @media only screen and (max-width:768px) {
+        margin: 60px 10px 0px 10px ;
+    }
+
 }
 
 // color de los botones del acordión

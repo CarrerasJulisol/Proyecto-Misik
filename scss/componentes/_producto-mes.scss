@@ -1,7 +1,7 @@
 /* seccion de que es teuki */
 
 .section-titulo {
-    margin: 65px 210px 30px 210px;
+    margin: 65px 0px 30px 0px;
    
     div {
         display: flex;
@@ -40,8 +40,14 @@
         h2 {
             @extend %subtitulo;
         }
+
+
+        
     }
 
+    @media only screen and (max-width:767px) {
+                margin: 0px 10%;
+            }
 }
 
 /* seccion de que tiene la teuki */
@@ -73,29 +79,29 @@
         }
     
         .imagen-costado {
-            margin: 0px 20px 0px 500px;
             width: 40%;
             position: relative;
             bottom: 150px;
+            left: 40%;
 
             @media only screen and (max-width:991px) {
                 margin: 30px;
                 bottom: 0px;
             }
+
+            @media only screen and (min-width:1445px) {
+                width: 500px;
+            }
+
+            @media only screen and (max-width:768px) {
+                display: none;
+            }
         }
 
     }
 
-    @media only screen and (min-width:768px) and (max-width:1290px) {
-        margin:  65px 0px;
-    }
-
-    @media only screen and (min-width:481px) and (max-width:767px) {
-        margin: 65px 0px;
-    }
-    
-    @media only screen and (max-width:480px) {
-        margin: 65px 0px;
+    @media only screen and (max-width:767px) {
+        margin: 0px 10% 50px 10%;
     }
     
 }
